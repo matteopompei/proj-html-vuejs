@@ -79,7 +79,7 @@ section {
             background: $accent;
             padding: 13px 30px;
             border: none;
-            border-radius: 30px;
+            border-radius: $button-border-radius;
 
             &:hover {
               background: $accent-hover;

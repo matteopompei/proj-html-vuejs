@@ -82,11 +82,11 @@ section {
       width: 90%;
       background: #fff;
       border-radius: 20px;
-      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+      box-shadow: $box-shadow;
       text-align: center;
 
       .title {
-        margin-bottom: 20px;
+        margin-bottom: $box-border-radius;
         font-size: 2rem;
         font-weight: bold;
         color: $accent;
@@ -118,7 +118,7 @@ section {
         width: fit-content;
         background: $accent;
         border: none;
-        border-radius: 30px;
+        border-radius: $button-border-radius;
         font-size: 0.9rem;
         font-weight: bold;
         text-transform: uppercase;
