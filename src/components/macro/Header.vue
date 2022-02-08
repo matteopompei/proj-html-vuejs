@@ -10,7 +10,7 @@
       </div>
     </div>
     <section class="jumbo">
-      <Navbar />
+      <Navbar :menu="menu" />
       <div class="container">
         <div class="title">Drive with Avada</div>
         <div class="subtitle">
@@ -23,11 +23,17 @@
 
 <script>
 import Navbar from "../sections/Navbar.vue";
+import menuArr from "../../assets/data/menu.js";
 
 export default {
   name: "Header",
   components: {
     Navbar,
+  },
+  data() {
+    return {
+      menu: menuArr,
+    };
   },
 };
 </script>
