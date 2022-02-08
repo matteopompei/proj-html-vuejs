@@ -123,6 +123,8 @@ section {
           }
 
           &.new::after {
+            position: relative;
+            top: -1px;
             margin-left: 10px;
             padding: 2px 5px;
             content: "New";
