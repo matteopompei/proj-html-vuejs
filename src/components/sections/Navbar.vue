@@ -106,6 +106,10 @@ section {
           &.active {
             color: $accent;
             border-bottom: 2px solid $accent;
+
+            &.new::after {
+              color: #fff;
+            }
           }
 
           &.booknow {
@@ -132,10 +136,6 @@ section {
             text-transform: uppercase;
             background: $accent;
             border-radius: 3px;
-          }
-
-          &.new:hover {
-            color: #fff;
           }
         }
       }
