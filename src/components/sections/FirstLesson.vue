@@ -45,7 +45,8 @@ export default {
 @import "../../assets/style/vars.scss";
 
 section {
-  padding: 100px 0;
+  margin-bottom: -50px;
+  padding: 100px 0 0 0;
 
   .left,
   .right {
