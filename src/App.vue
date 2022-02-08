@@ -23,4 +23,9 @@ export default {
 
 <style lang="scss">
 @import "./assets/style/global.scss";
+
+body {
+  font-family: $first-font;
+  color: #747474;
+}
 </style>

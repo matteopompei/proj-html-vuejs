@@ -49,7 +49,7 @@ export default {
 
 .jumbo {
   position: relative;
-  padding: 20% 50px 10% 50px;
+  padding: 20% 0 10% 0;
   background: url("../../assets/img/homepage-hero-background.jpg");
   background-size: cover;
   color: #fff;
