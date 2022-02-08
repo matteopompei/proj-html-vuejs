@@ -63,7 +63,7 @@ section {
           font-weight: bold;
           text-transform: uppercase;
           border-bottom: 2px solid transparent;
-          transition: 0.5s;
+          transition: $trans-time;
 
           &:hover,
           &.active {
