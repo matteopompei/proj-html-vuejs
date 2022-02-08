@@ -55,7 +55,6 @@ export default {
   color: #fff;
 
   .container {
-    width: 60%;
     justify-content: flex-start;
     flex-direction: column;
   }
