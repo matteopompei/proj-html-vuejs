@@ -82,7 +82,7 @@ section {
             border-radius: 30px;
 
             &:hover {
-              background: #64a64e;
+              background: $accent-hover;
               color: inherit;
               padding: 13px 30px;
               border-bottom: inherit;
