@@ -37,7 +37,7 @@ section {
     gap: 100px;
     margin: 10px;
     min-height: 350px;
-    width: 30%;
+    width: 33%;
     background: #fff;
     border-top: 5px solid $accent;
     border-radius: $box-border-radius;
