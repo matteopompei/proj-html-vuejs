@@ -21,6 +21,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/style/vars.scss";
+
 section {
   padding: 100px 0;
   background: url("../../assets/img/horizontal-cta-background.jpg") center;
