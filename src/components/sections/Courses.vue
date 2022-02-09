@@ -46,6 +46,7 @@ export default {
 section {
   background: url("../../assets/img/promise-background.jpg") bottom;
   background-size: cover;
+  padding-bottom: 100px;
 
   .left {
     width: 40%;
