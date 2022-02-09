@@ -71,7 +71,6 @@ section {
       }
 
       .about-us {
-        // display: block;
         padding: 13px 100px;
         height: fit-content;
         background: $accent;
@@ -98,6 +97,7 @@ section {
         flex-direction: column;
         justify-content: center;
         gap: 15px;
+        margin-bottom: -130px;
         padding: 35px 30px;
         width: 33%;
         background: #fff;
