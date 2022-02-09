@@ -7,6 +7,7 @@
     <Instructors />
     <Testimonials />
     <LatestNews />
+    <Newsletter />
   </main>
 </template>
 
@@ -18,6 +19,7 @@ import Rates from "../sections/Rates.vue";
 import Instructors from "../sections/Instructors.vue";
 import Testimonials from "../sections/Testimonials.vue";
 import LatestNews from "../sections/LatestNews.vue";
+import Newsletter from "../sections/Newsletter.vue";
 
 export default {
   name: "Main",
@@ -29,6 +31,7 @@ export default {
     Instructors,
     Testimonials,
     LatestNews,
+    Newsletter,
   },
 };
 </script>
