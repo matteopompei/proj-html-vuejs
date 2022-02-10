@@ -14,3 +14,22 @@
   display: flex;
   justify-content: space-between;
 }
+
+.button {
+  height: fit-content;
+  padding: 13px 30px;
+  background: $accent;
+  border: none;
+  border-radius: $button-border-radius;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  transition: $trans-time;
+
+  &:hover {
+    background: $accent-hover;
+  }
+}

@@ -9,7 +9,7 @@
             ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula
             semper.
           </p>
-          <a href="#" class="about-us">More about us</a>
+          <a href="#" class="button">More about us</a>
         </div>
       </div>
       <div class="instructors">
@@ -70,21 +70,8 @@ section {
         color: $color2;
       }
 
-      .about-us {
+      .button {
         padding: 13px 100px;
-        height: fit-content;
-        background: $accent;
-        border-radius: $button-border-radius;
-        font-size: 1.4;
-        font-weight: bold;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-        transition: $trans-time;
-
-        &:hover {
-          background: $accent-hover;
-        }
       }
     }
 

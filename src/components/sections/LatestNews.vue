@@ -20,7 +20,7 @@
             <p>{{ element.text }}</p>
           </div>
         </div>
-        <a href="#" class="more">More from the blog</a>
+        <a href="#" class="button">More from the blog</a>
       </div>
 
       <svg
@@ -124,24 +124,11 @@ section {
         }
       }
 
-      .more {
+      .button {
         display: block;
-        margin: 30px auto;
+        margin: 30px auto 0 auto;
         padding: 13px 30px;
-        height: fit-content;
         width: fit-content;
-        background: $accent;
-        border-radius: $button-border-radius;
-        font-size: 1.4;
-        font-weight: bold;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-        transition: $trans-time;
-
-        &:hover {
-          background: $accent-hover;
-        }
       }
     }
 

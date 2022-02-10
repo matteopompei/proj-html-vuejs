@@ -28,7 +28,7 @@
             <input type="email" placeholder="Email*" />
             <input type="text" placeholder="Telephone" />
             <input type="text" placeholder="Location" />
-            <input type="submit" value="Request a callback" />
+            <input type="submit" value="Request a callback" class="button" />
           </form>
         </div>
       </div>
@@ -99,7 +99,8 @@ section {
         line-height: 2rem;
       }
 
-      input {
+      input[type="text"],
+      input[type="email"] {
         margin-bottom: 30px;
         padding: 15px 15px;
         width: 100%;
@@ -112,23 +113,8 @@ section {
         color: $color2;
       }
 
-      input[type="submit"] {
-        margin: 0 auto;
-        padding: 13px 30px;
-        width: fit-content;
-        background: $accent;
-        border: none;
-        border-radius: $button-border-radius;
-        font-size: 0.9rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #fff;
-        transition: $trans-time;
+      .button {
         cursor: pointer;
-
-        &:hover {
-          background: $accent-hover;
-        }
       }
     }
   }

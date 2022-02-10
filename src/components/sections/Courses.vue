@@ -9,7 +9,7 @@
             ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula
             semper.
           </p>
-          <a href="#">Course information</a>
+          <a href="#" class="button">Course information</a>
         </div>
       </div>
       <div class="right">
@@ -72,22 +72,6 @@ section {
         font-size: 1rem;
         line-height: 2rem;
         color: $color2;
-      }
-
-      a {
-        padding: 13px 30px;
-        background: $accent;
-        border-radius: $button-border-radius;
-        font-size: 1.4;
-        font-weight: bold;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-        transition: $trans-time;
-
-        &:hover {
-          background: $accent-hover;
-        }
       }
     }
   }

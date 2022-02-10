@@ -3,7 +3,7 @@
     <div class="container">
       <div class="title">Sign up to our Newsletter</div>
       <input type="text" />
-      <input type="submit" value="Subscribe" />
+      <input type="submit" value="Subscribe" class="button" />
       <p>
         (We do not share your data with anybody, and only use it for its
         intended purpose)
@@ -50,25 +50,12 @@ section {
       color: $color2;
     }
 
-    input[type="submit"] {
+    .button {
       display: block;
       margin-bottom: 50px;
       padding: 13px 30px;
-      height: fit-content;
       width: 600px;
-      background: $accent;
-      border: none;
-      border-radius: $button-border-radius;
-      font-size: 1.4;
-      font-weight: bold;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #fff;
-      transition: $trans-time;
-
-      &:hover {
-        background: $accent-hover;
-      }
+      cursor: pointer;
     }
   }
 }

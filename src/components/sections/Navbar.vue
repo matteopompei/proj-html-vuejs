@@ -7,13 +7,13 @@
       />
       <nav>
         <ul>
-          <li v-for="(element, index) in menu" :key="index">
+          <li v-for="(element, index) in menuArr" :key="index">
             <a
               href="#"
               :class="{
                 active: element.isActive,
                 new: element.isNew,
-                booknow: element.lastItem,
+                button: element.lastItem,
               }"
               >{{ element.text }}</a
             >
@@ -27,8 +27,45 @@
 <script>
 export default {
   name: "Navbar",
-  props: {
-    menu: Array,
+  data() {
+    return {
+      menuArr: [
+        {
+          text: "Home",
+          isActive: true,
+          isNew: false,
+        },
+        {
+          text: "About",
+          isActive: false,
+          isNew: false,
+        },
+        {
+          text: "Prices",
+          isActive: false,
+          isNew: false,
+        },
+        {
+          text: "Courses",
+          isActive: false,
+          isNew: true,
+        },
+        {
+          text: "Locations",
+          isActive: false,
+          isNew: false,
+        },
+        {
+          text: "Blog",
+          isActive: false,
+          isNew: false,
+        },
+        {
+          text: "Book now",
+          lastItem: true,
+        },
+      ],
+    };
   },
 };
 </script>
@@ -63,35 +100,25 @@ section {
           font-weight: bold;
           text-transform: uppercase;
           border-bottom: 2px solid transparent;
-          transition: $trans-time;
+          transition: 0.5s;
 
           &:hover,
           &.active {
             color: $accent;
             border-bottom: 2px solid $accent;
-
-            &.new::after {
-              color: #fff;
-            }
           }
 
-          &.booknow {
-            background: $accent;
+          &.button {
             padding: 13px 30px;
             border: none;
-            border-radius: $button-border-radius;
 
             &:hover {
-              background: $accent-hover;
               color: inherit;
-              padding: 13px 30px;
               border-bottom: inherit;
             }
           }
 
           &.new::after {
-            position: relative;
-            top: -1px;
             margin-left: 10px;
             padding: 2px 5px;
             content: "New";
@@ -99,6 +126,9 @@ section {
             text-transform: uppercase;
             background: $accent;
             border-radius: 3px;
+          }
+          &.new:hover {
+            color: #fff;
           }
         }
       }
