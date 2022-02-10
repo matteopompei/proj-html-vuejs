@@ -7,7 +7,7 @@
       />
       <nav>
         <ul>
-          <li v-for="(element, index) in menuArr" :key="index">
+          <li v-for="(element, index) in menu" :key="index">
             <a
               href="#"
               :class="{
@@ -27,45 +27,8 @@
 <script>
 export default {
   name: "Navbar",
-  data() {
-    return {
-      menuArr: [
-        {
-          text: "Home",
-          isActive: true,
-          isNew: false,
-        },
-        {
-          text: "About",
-          isActive: false,
-          isNew: false,
-        },
-        {
-          text: "Prices",
-          isActive: false,
-          isNew: false,
-        },
-        {
-          text: "Courses",
-          isActive: false,
-          isNew: true,
-        },
-        {
-          text: "Locations",
-          isActive: false,
-          isNew: false,
-        },
-        {
-          text: "Blog",
-          isActive: false,
-          isNew: false,
-        },
-        {
-          text: "Book now",
-          lastItem: true,
-        },
-      ],
-    };
+  props: {
+    menu: Array,
   },
 };
 </script>
